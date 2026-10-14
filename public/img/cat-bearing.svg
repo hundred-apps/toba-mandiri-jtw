@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Bearing">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#133a5f"/>
+      <stop offset="55%" stop-color="#082c49"/>
+      <stop offset="100%" stop-color="#02101c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2">
+    <circle cx="400" cy="300" r="150"/>
+    <circle cx="400" cy="300" r="200"/>
+  </g>
+  <text x="400" y="296" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">Bearing</text>
+  <text x="400" y="336" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#fcbf01">PT. Toba Mandiri Sukses</text>
+</svg>
