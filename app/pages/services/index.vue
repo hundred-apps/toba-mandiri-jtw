@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import type { ServiceItem } from "~/types/content";
+import type { ServiceItem } from '~/types/content'
 
-const { t } = useI18n();
+const { t } = useI18n()
 
-const { data: services } = useCms<ServiceItem[]>("services", "all");
-const { data: settings } = await useCompany();
+const { data: services } = useCms<ServiceItem[]>('services', 'all')
+const { data: settings } = await useCompany()
 
 useSeoMeta({
-  title: () => `${t("services.title")} | Lobunta Lubricants`,
-  description: () => t("services.intro"),
-});
+  title: () => `${t('services.title')} | PT. Toba Mandiri Sukses`,
+  description: () => t('services.intro')
+})
 </script>
 
 <template>

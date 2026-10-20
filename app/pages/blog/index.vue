@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { PostItem } from '~/types/content'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const route = useRoute()
 
 const { data: posts } = await useCms<PostItem[]>('posts', 'all')
@@ -29,8 +29,8 @@ function formatDate(dateStr: string): string {
 }
 
 useSeoMeta({
-  title: () => 'Blog | PT. Toba Mandiri Sukses',
-  description: 'Artikel dan berita terbaru seputan pelumas, industri, dan teknologi'
+  title: () => t('meta.blogTitle'),
+  description: () => t('meta.blogDescription')
 })
 </script>
 
@@ -40,10 +40,10 @@ useSeoMeta({
       <div class="container-page">
         <div class="text-center max-w-3xl mx-auto">
           <h1 class="font-display text-4xl md:text-5xl font-bold text-brand-900 dark:text-white">
-            Blog & Artikel
+            {{ $t('blog.heading') }}
           </h1>
           <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
-            Wawasan, tips, dan berita terbaru seputan pelumas, industri, dan teknologi
+            {{ $t('blog.intro') }}
           </p>
         </div>
       </div>

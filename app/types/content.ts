@@ -196,12 +196,8 @@ export interface PostItem {
 
 export interface HomeContent {
   hero: HeroConfig
-  aboutIntro: { heading: Localized; body: Localized }
-  milestones: Milestone[]
   categories: ProductCategory[]
   customers: CustomerItem[]
-  testimonials: TestimonialItem[]
-  cta: { heading: Localized; body: Localized; button: LocalizedLink }
 }
 
 export interface CareerItem {

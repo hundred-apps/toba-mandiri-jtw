@@ -5,6 +5,8 @@ definePageMeta({
 
 const { post } = useAdminApi()
 
+  useSeoMeta({ title: 'Lupa Password | CMS TMS' })
+
 const form = reactive({ identifier: '', method: 'email' })
 const state = ref<'idle' | 'sending' | 'success' | 'error'>('idle')
 const message = ref('')
@@ -67,7 +69,7 @@ async function submit() {
             type="text"
             required
             class="field"
-            :placeholder="form.method === 'email' ? 'admin@lobuntalubricants.com' : '08xxxxxxxxxx'"
+            :placeholder="form.method === 'email' ? 'admin@tobamandirisukses.com' : '08xxxxxxxxxx'"
           >
         </label>
 

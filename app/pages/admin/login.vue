@@ -4,6 +4,8 @@ const { saveToken } = useAdminAuth()
 const router = useRouter()
 const route = useRoute()
 
+  useSeoMeta({ title: 'Masuk | CMS TMS' })
+
 const email = ref('')
 const password = ref('')
 const loading = ref(false)
@@ -35,7 +37,7 @@ async function handleLogin() {
     <div class="w-full max-w-md">
       <div class="text-center mb-8">
         <div class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-700 mx-auto mb-4">
-          <span class="font-display text-2xl font-black text-white">TM</span>
+          <span class="font-display text-2xl font-black text-white">LL</span>
         </div>
         <h1 class="text-2xl font-bold text-brand-900 dark:text-white">Login Admin</h1>
         <p class="mt-2 text-slate-600 dark:text-slate-300">Masuk untuk mengelola konten</p>

@@ -242,7 +242,7 @@ onBeforeUnmount(() => {
             <button type="button" class="btn-outline" :disabled="deleting" @click="cancelRemove">
               Batal
             </button>
-            <button type="button" class="btn-danger" :disabled="deleting" @click="applyRemove">
+            <button type="button" class="btn-accent" :disabled="deleting" @click="applyRemove">
               {{ deleting ? 'Menghapus...' : 'Ya, hapus' }}
             </button>
           </div>

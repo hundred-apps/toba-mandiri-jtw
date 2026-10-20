@@ -2,6 +2,7 @@
 import type { HomeContent, PostItem, ServiceItem } from '~/types/content'
 
 const { locale, t } = useI18n()
+const milestones = useMilestones()
 
 const { data: home } = await useCms<HomeContent>('home', 'home')
 const { data: posts } = await useCms<PostItem[]>('posts', 'all')
@@ -73,10 +74,10 @@ useSeoMeta({
     <section class="section">
       <div class="container-page grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <UiSectionHeading
-          :heading="pick(home.aboutIntro.heading)"
-          :body="pick(home.aboutIntro.body)"
+          :heading="$t('home.aboutHeading')"
+          :body="$t('home.aboutBody')"
         />
-        <MilestoneTimeline :items="home.milestones" />
+        <MilestoneTimeline :items="milestones" />
       </div>
     </section>
 
@@ -128,10 +129,10 @@ useSeoMeta({
     </section>
 
     <CtaBanner
-      :heading="pick(home.cta.heading)"
-      :body="pick(home.cta.body)"
-      :button-label="pick(home.cta.button.label)"
-      :button-to="home.cta.button.to"
+      :heading="$t('home.ctaHeading')"
+      :body="$t('home.ctaBody')"
+      :button-label="$t('home.ctaButton')"
+      button-to="/contact"
       :secondary-label="$t('nav.products')"
       secondary-to="/products"
     />

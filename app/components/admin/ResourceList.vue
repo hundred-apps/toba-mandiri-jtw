@@ -126,7 +126,7 @@ async function confirmDelete() {
 
 const pageCount = computed(() => Math.max(1, Math.ceil(total.value / limit)))
 
-useSeoMeta({ title: () => `${props.label} | CMS Toba Mandiri Sukses` })
+  useSeoMeta({ title: () => `${props.label} | CMS TMS` })
 </script>
 
 <template>
@@ -226,7 +226,7 @@ useSeoMeta({ title: () => `${props.label} | CMS Toba Mandiri Sukses` })
             <button type="button" class="btn-outline" :disabled="deleting" @click="pendingDelete = null">
               Batal
             </button>
-            <button type="button" class="btn-danger" :disabled="deleting || loadingDeleteInfo" @click="confirmDelete">
+            <button type="button" class="btn-accent" :disabled="deleting || loadingDeleteInfo" @click="confirmDelete">
               {{ deleting ? 'Menghapus...' : 'Ya, hapus' }}
             </button>
           </div>

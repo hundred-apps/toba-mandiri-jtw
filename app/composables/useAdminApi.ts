@@ -102,13 +102,6 @@ export function useAdminApi() {
 
   function list<T>(resource: string, query: ListQuery = {}) {
     const name = resourceOf(resource)
-    // Mock data untuk admin-users saat backend butuh auth (401)
-    const mockAdminUsers: Record<string, unknown>[] = resource === 'admin-users'
-      ? [
-          { id: 1, name: 'Super User', email: 'superuser@lobunta.com', role: 'superuser', phone: '081234567890' },
-          { id: 2, name: 'Admin', email: 'admin@lobunta.com', role: 'admin', phone: '081234567891' }
-        ]
-      : []
 
     return run<{ data: T[]; total: number; page: number; limit: number }>(
       async () => {
@@ -120,7 +113,7 @@ export function useAdminApi() {
         const rows = (hasApiMap(resource) ? raw.map((row) => normalizeRow(resource, row)) : raw) as T[]
         return { data: rows, total: Number(res.data?.total_data || rows.length), page: Number(res.data?.currentPage || 1), limit: query.limit || 20 }
       },
-      { data: mockAdminUsers as T[], total: mockAdminUsers.length, page: 1, limit: query.limit || 20 }
+      { data: [] as T[], total: 0, page: 1, limit: query.limit || 20 }
     )
   }
 

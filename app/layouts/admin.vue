@@ -57,7 +57,7 @@ function isActive(to: string): boolean {
           >
           <UiIcon v-else name="oil" :size="28" class="text-brand-700 dark:text-brand-300" />
           <span v-if="!collapsed" class="leading-tight">
-            <span class="block font-display text-sm font-bold text-brand-900 dark:text-white">CMS Toba Mandiri Sukses</span>
+            <span class="block font-display text-sm font-bold text-brand-900 dark:text-white">TMS CMS</span>
             <span class="block text-[10px] uppercase tracking-wider text-slate-500">Panel admin</span>
           </span>
         </div>

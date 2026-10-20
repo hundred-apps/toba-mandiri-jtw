@@ -7,7 +7,7 @@ const visible = ref(false)
 
 const href = computed(() => {
   if (!props.settings) return '#'
-  return whatsappLink(props.settings.whatsapp, 'Halo, saya ingin konsultasi produk chemical PT. Toba Mandiri Sukses.')
+  return whatsappLink(props.settings.whatsapp, 'Halo, saya ingin konsultasi produk PT. Toba Mandiri Sukses.')
 })
 
 onMounted(() => {

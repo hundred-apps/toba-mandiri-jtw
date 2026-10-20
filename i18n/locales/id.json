@@ -6,7 +6,6 @@
     "services": "Layanan",
     "customers": "Customer",
     "blog": "Blog",
-"career": "Karier",
     "privacy": "Kebijakan Privasi",
     "contact": "Kontak",
     "menu": "Menu",
@@ -32,9 +31,12 @@
     "whatsapp": "WhatsApp",
     "email": "Email",
     "address": "Alamat",
-    "downloadProfile": "Unduh Company Profile (PDF)"
+    "downloadProfile": "Unduh Company Profile (PDF)",
+    "requestProfile": "Minta company profile",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya"
   },
-"home": {
+  "home": {
     "statsLabel": "Dalam angka",
     "servicesTitle": "Layanan",
     "categoriesTitle": "Kategori produk",
@@ -42,7 +44,12 @@
     "customersTitle": "Beberapa customer kami",
     "blogTitle": "Artikel terbaru",
     "promoTitle": "Promo-program",
-    "contactTitle": "Hubungi kami"
+    "contactTitle": "Hubungi kami",
+    "aboutHeading": "Industrial Chemical Solutions",
+    "aboutBody": "Berdiri sejak 2013, PT. Toba Mandiri Sukses adalah mitra pemasok chemical industri yang menghadirkan produk berkualitas dan solusi andal untuk mendukung keunggulan operasional di berbagai sektor industri.",
+    "ctaHeading": "Butuh pasokan chemical yang andal?",
+    "ctaBody": "Konsultasikan kebutuhan produk dan volume Anda bersama tim kami. Kami siap membantu pada jam kerja.",
+    "ctaButton": "Hubungi kami"
   },
   "products": {
     "title": "Produk",
@@ -87,39 +94,15 @@
     "backToBlog": "Semua artikel",
     "viewAll": "Lihat artikel lainnya"
   },
-  "career": {
-    "title": "Karier",
-    "heading": "Bekerja bersama kami",
-    "intro": "Kami membuka lowongan bagi profesional di bidang distribusi chemical, dukungan teknis, dan operasional gudang.",
-    "openPositions": "Lowongan terbuka",
-    "requirements": "Kualifikasi",
-    "location": "Lokasi",
-    "type": "Tipe",
-    "department": "Departemen",
-    "postedOn": "Dirilis",
-    "empty": "Belum ada lowongan terbuka saat ini.",
-    "apply": "Lamar via email",
-    "sendCv": "Kirim CV",
-"requestProfile": "Minta company profile"
-  },
   "profile": {
     "contactTitle": "Kontak & informasi operasional",
-    "fax": "Faks",
     "legalName": "Badan hukum",
-    "aboutTitle": "Tentang kami",
-    "businessLines": "Bidang usaha",
     "founded": "Tahun berdiri",
-    "agency": "Nomor agen",
-    "categories": "Kategori produk",
-    "customers": "Customer",
-    "valuesTitle": "Nilai & komitmen",
-    "valuesBody": "Prinsip yang kami pegang dalam melayani pelanggan industri di seluruh Indonesia.",
-    "value1": "Produk sesuai spesifikasi",
-    "value2": "Stok siap kirim",
-    "value3": "Harga kompetitif",
-    "value4": "Pengiriman tepat waktu",
-    "value5": "Distribusi ke seluruh Indonesia",
-    "value6": "Dukungan teknis & K3",
+    "statsFounded": "Tahun berdiri",
+    "statsSegments": "Segmen industri",
+    "statsServices": "Layanan",
+    "statsPackaging": "Pilihan kemasan",
+    "productsLabel": "Produk utama",
     "downloadBody": "Minta dokumen company profile lengkap untuk kebutuhan kerja sama dan pengadaan.",
     "galleryTitle": "Dokumentasi",
     "galleryBody": "Cuplikan kegiatan operasional, distribusi, dan dukungan teknis kami."
@@ -160,6 +143,8 @@
   },
   "meta": {
     "homeTitle": "PT. Toba Mandiri Sukses - Supplier Chemical Industri",
-    "homeDescription": "Supplier chemical industri sejak 2013. Melayani industri ban & karet, komponen karet otomotif, pengolahan air, smelter, dan pabrik semen dengan produk berkualitas serta dukungan K3."
+    "homeDescription": "Supplier chemical industri sejak 2013. Melayani industri ban & karet, komponen karet otomotif, pengolahan air, smelter, dan pabrik semen dengan produk berkualitas serta dukungan K3.",
+    "blogTitle": "Blog | PT. Toba Mandiri Sukses",
+    "blogDescription": "Artikel dan wawasan teknis seputar chemical industri, keselamatan penanganan, dan pemilihan produk dari PT. Toba Mandiri Sukses."
   }
 }

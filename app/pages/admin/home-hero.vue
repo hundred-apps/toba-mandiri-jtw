@@ -68,7 +68,7 @@ async function save() {
   notice.value = { type: 'ok', text: 'Hero beranda disimpan.' }
 }
 
-useSeoMeta({ title: 'Hero Beranda | CMS Toba Mandiri Sukses' })
+  useSeoMeta({ title: 'Hero Beranda | CMS TMS' })
 </script>
 
 <template>

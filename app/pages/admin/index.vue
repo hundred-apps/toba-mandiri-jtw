@@ -24,7 +24,7 @@ async function load() {
 
 await load()
 
-useSeoMeta({ title: 'Dashboard CMS | PT. Toba Mandiri Sukses' })
+  useSeoMeta({ title: 'Dashboard CMS | PT. Toba Mandiri Sukses' })
 </script>
 
 <template>

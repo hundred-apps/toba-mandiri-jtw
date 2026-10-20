@@ -3,8 +3,8 @@ import type { PageContent } from '~/types/content'
 
 const props = defineProps<{ slug: string }>()
 
-const { data: pages } = await useCms<Record<string, PageContent>>('pages', 'all')
-const page = computed<PageContent | null>(() => pages.value[props.slug] ?? null)
+const { data: pages } = await useCms<any>('posts', 'pages-all')
+const page = computed<PageContent | null>(() => (pages.value as any)?.[props.slug] ?? null)
 
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })

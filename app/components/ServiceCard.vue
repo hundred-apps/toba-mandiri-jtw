@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { ServiceItem } from "~/types/content";
+import type { ServiceItem } from '~/types/content'
 
-defineProps<{ service: ServiceItem }>();
+defineProps<{ service: ServiceItem }>()
 
-const { locale } = useI18n();
+const { locale } = useI18n()
 </script>
 
 <template>
@@ -11,16 +11,14 @@ const { locale } = useI18n();
     :to="`/${locale}/services/${service.slug}`"
     class="card group flex flex-col overflow-hidden transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-lg dark:hover:border-brand-500/50"
   >
-    <div
-      class="aspect-[16/10] w-full overflow-hidden bg-brand-50 dark:bg-white/5"
-    >
+    <div class="aspect-[16/10] w-full overflow-hidden bg-brand-50 dark:bg-white/5">
       <img
         v-if="service.image"
         :src="service.image"
         :alt="pick(service.title)"
         class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         loading="lazy"
-      />
+      >
       <div
         v-else
         class="grid h-full w-full place-items-center bg-gradient-to-br from-brand-600 to-brand-800 text-white/90"
@@ -39,7 +37,7 @@ const { locale } = useI18n();
       <span
         class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-700 group-hover:text-brand-500 dark:text-brand-300"
       >
-        {{ $t("common.learnMore") }}
+        {{ $t('common.learnMore') }}
         <UiIcon name="arrow-right" :size="15" />
       </span>
     </div>

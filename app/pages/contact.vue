@@ -90,7 +90,7 @@ useSeoMeta({
           >
             <iframe
               title="PT. Toba Mandiri Sukses"
-              src="https://www.google.com/maps?q=Jl.%20Jendral%20Sudirman%20KM%2031%2C%20Kayuringin%20Jaya%2C%20Bekasi%2017144&output=embed"
+              src="https://maps.google.com/maps?q=Jl.%20Jendral%20Sudirman%20KM%2031%2C%20Kayuringin%20Jaya%2C%20Bekasi%2017144&output=embed"
               width="600"
               height="450"
               style="border: 0"

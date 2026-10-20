@@ -82,6 +82,20 @@ const singleValue = computed<string>({
   },
 });
 
+/** Proxy untuk field tanggal: API mengirim ISO penuh (2026-10-09T10:00:00.000Z),
+ *  sedangkan <input type="date"> hanya memahami YYYY-MM-DD. */
+const dateValue = computed<string>({
+  get: () => {
+    const raw = current.value;
+    if (raw === null || raw === undefined || raw === "") return "";
+    const matched = String(raw).match(/^(\d{4}-\d{2}-\d{2})/);
+    return matched ? matched[1]! : "";
+  },
+  set: (value) => {
+    current.value = value;
+  },
+});
+
 /** Proxy untuk field gambar: string URL atau File baru. */
 const imageModel = computed<unknown>({
   get: () => {
@@ -323,18 +337,6 @@ function abs(url: string): string {
       </label>
     </div>
 
-    <!-- Bilingual HTML (WYSIWYG) -->
-    <!-- <div v-if="isBilingual && field.kind === 'html'" class="grid grid-cols-1 gap-4 xl:grid-cols-2">
-      <div class="flex flex-col gap-1.5">
-        <span class="text-xs font-medium text-slate-600 dark:text-slate-400">Indonesia</span>
-        <AdminHtmlEditor v-model="bilingualId" :placeholder="placeholder.id" :disabled="disabled" />
-      </div>
-      <div class="flex flex-col gap-1.5">
-        <span class="text-xs font-medium text-slate-600 dark:text-slate-400">English</span>
-        <AdminHtmlEditor v-model="bilingualEn" :placeholder="placeholder.en" :disabled="disabled" />
-      </div>
-    </div> -->
-
     <!-- Bilingual textarea (side by side) -->
     <div
       v-else-if="isBilingual && field.kind === 'textarea'"
@@ -408,7 +410,7 @@ function abs(url: string): string {
 
     <input
       v-else-if="field.kind === 'date'"
-      v-model="current"
+      v-model="dateValue"
       type="date"
       class="field"
       :disabled="disabled"
@@ -430,12 +432,7 @@ function abs(url: string): string {
       class="field"
       placeholder="tag satu, tag dua"
       :disabled="disabled"
-      @input="
-        current = ($event.target as HTMLInputElement).value
-          .split(',')
-          .map((item) => item.trim())
-          .filter(Boolean)
-      "
+      @input="current = ($event.target as HTMLInputElement).value"
     />
 
     <label v-else-if="field.kind === 'toggle'" class="flex items-center gap-3">

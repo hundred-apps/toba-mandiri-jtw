@@ -6,7 +6,6 @@
     "services": "Services",
     "customers": "Customers",
     "blog": "Blog",
-"career": "Career",
     "privacy": "Privacy Policy",
     "contact": "Contact",
     "menu": "Menu",
@@ -32,18 +31,25 @@
     "whatsapp": "WhatsApp",
     "email": "Email",
     "address": "Address",
-    "downloadProfile": "Download Company Profile (PDF)"
+    "downloadProfile": "Download Company Profile (PDF)",
+    "requestProfile": "Request the company profile",
+    "prev": "Previous",
+    "next": "Next"
   },
   "home": {
     "statsLabel": "In numbers",
     "servicesTitle": "Services",
-    "journeyTitle": "Our journey",
     "categoriesTitle": "Product categories",
     "categoriesBody": "Chemical solutions for a wide range of industries.",
     "customersTitle": "Few of our customers",
     "blogTitle": "Latest articles",
     "promoTitle": "Promotions and programs",
-    "contactTitle": "Contact us"
+    "contactTitle": "Contact us",
+    "aboutHeading": "Industrial Chemical Solutions",
+    "aboutBody": "Established in 2013, PT. Toba Mandiri Sukses is a trusted industrial chemical supply partner, delivering quality products and dependable solutions to support operational excellence across a wide range of industries.",
+    "ctaHeading": "Need a reliable chemical supply?",
+    "ctaBody": "Discuss your product and volume requirements with our team. We are ready to help during office hours.",
+    "ctaButton": "Contact us"
   },
   "products": {
     "title": "Products",
@@ -88,39 +94,15 @@
     "backToBlog": "All articles",
     "viewAll": "See other articles"
   },
-  "career": {
-    "title": "Career",
-    "heading": "Build your career with us",
-    "intro": "We regularly open positions for professionals in chemical distribution, technical support, and warehouse operations.",
-    "openPositions": "Open positions",
-    "requirements": "Requirements",
-    "location": "Location",
-    "type": "Type",
-    "department": "Department",
-    "postedOn": "Posted",
-    "empty": "No open positions at the moment.",
-"apply": "Apply by email",
-    "requestProfile": "Request the company profile",
-"sendCv": "Send your CV"
-  },
   "profile": {
     "contactTitle": "Contact and operational information",
-    "fax": "Fax",
     "legalName": "Legal entity",
-    "aboutTitle": "About us",
-    "businessLines": "Business lines",
     "founded": "Founded",
-    "agency": "Agency number",
-    "categories": "Product categories",
-    "customers": "Customers",
-    "valuesTitle": "Values & commitment",
-    "valuesBody": "The principles that guide how we serve industrial customers across Indonesia.",
-    "value1": "Products to specification",
-    "value2": "Ready stock",
-    "value3": "Competitive pricing",
-    "value4": "On-time delivery",
-    "value5": "Nationwide distribution",
-    "value6": "Technical support & K3",
+    "statsFounded": "Founded",
+    "statsSegments": "Industry segments",
+    "statsServices": "Services",
+    "statsPackaging": "Packaging options",
+    "productsLabel": "Key products",
     "downloadBody": "Request the complete company profile document for partnership and procurement needs.",
     "galleryTitle": "Gallery",
     "galleryBody": "A glimpse of our operations, distribution, and technical support."
@@ -161,6 +143,8 @@
   },
   "meta": {
     "homeTitle": "PT. Toba Mandiri Sukses - Industrial Chemical Supplier",
-    "homeDescription": "Industrial chemical supplier since 2013. Serving the tire & rubber, automotive rubber component, water treatment, smelter, and cement plant industries with quality products and K3 support."
+    "homeDescription": "Industrial chemical supplier since 2013. Serving the tire & rubber, automotive rubber component, water treatment, smelter, and cement plant industries with quality products and K3 support.",
+    "blogTitle": "Blog | PT. Toba Mandiri Sukses",
+    "blogDescription": "Technical articles and insights on industrial chemicals, safe handling, and product selection from PT. Toba Mandiri Sukses."
   }
 }

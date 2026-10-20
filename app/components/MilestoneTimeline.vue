@@ -1,12 +1,12 @@
 ﻿<script setup lang="ts">
-import type { Milestone } from '~/types/content'
+import type { HomeMilestone } from '~/composables/useMilestones'
 
-defineProps<{ items: Milestone[] }>()
+defineProps<{ items: HomeMilestone[] }>()
 </script>
 
 <template>
   <ol class="relative space-y-8 border-l-2 border-brand-100 pl-8 dark:border-white/10">
-    <li v-for="item in items" :key="item.id" class="relative">
+    <li v-for="(item, index) in items" :key="index" class="relative">
       <span class="absolute -left-[2.35rem] grid h-8 w-8 place-items-center rounded-full bg-brand-700 font-display text-xs font-bold text-white">
         {{ item.year.slice(-2) }}
       </span>
@@ -14,10 +14,10 @@ defineProps<{ items: Milestone[] }>()
         {{ item.year }}
       </p>
       <h3 class="mt-1 text-lg">
-        {{ pick(item.title) }}
+        {{ item.title }}
       </h3>
       <p class="prose-lkr mt-2 text-sm">
-        {{ pick(item.description) }}
+        {{ item.description }}
       </p>
     </li>
   </ol>

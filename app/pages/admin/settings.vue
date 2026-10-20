@@ -10,7 +10,7 @@ const fields: FieldDef[] = [
   { name: 'legalName', label: 'Badan hukum', kind: 'text', required: true, help: 'Dipakai di footer, contoh: PT. Toba Mandiri Sukses.' },
   { name: 'tagline', label: 'Tagline', kind: 'text', bilingual: true, required: true },
   { name: 'description', label: 'Deskripsi perusahaan', kind: 'textarea', bilingual: true, required: true, rows: 4, help: 'Tampil di aside profil dan meta description.' },
-  { name: 'agencyNumber', label: 'Nomor agen', kind: 'text', required: false, help: 'Opsional.' },
+  { name: 'agencyNumber', label: 'Nomor agen Pertamina', kind: 'text', required: true, help: 'Contoh: C 705106' },
   { name: 'foundedYear', label: 'Tahun berdiri', kind: 'text', required: true },
   { name: 'address', label: 'Alamat', kind: 'textarea', bilingual: true, required: true, rows: 2 },
   { name: 'phone', label: 'Nomor telepon', kind: 'repeater', required: true, help: 'Satu baris satu nomor. Baris pertama dipakai di header.' },
@@ -74,7 +74,7 @@ async function save() {
   notice.value = { type: 'ok', text: 'Pengaturan disimpan.' }
 }
 
-useSeoMeta({ title: 'Pengaturan situs | CMS Toba Mandiri Sukses' })
+  useSeoMeta({ title: 'Pengaturan situs | CMS TMS' })
 </script>
 
 <template>

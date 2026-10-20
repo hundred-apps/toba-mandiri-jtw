@@ -113,7 +113,7 @@ async function confirmDestroy() {
   }
 }
 
-useSeoMeta({ title: () => `${isNew.value ? 'Tambah' : 'Ubah'} ${props.singular} | CMS Toba Mandiri Sukses` })
+  useSeoMeta({ title: () => `${isNew.value ? 'Tambah' : 'Ubah'} ${props.singular} | CMS TMS` })
 </script>
 
 <template>
@@ -186,7 +186,7 @@ useSeoMeta({ title: () => `${isNew.value ? 'Tambah' : 'Ubah'} ${props.singular} 
             <button type="button" class="btn-outline" :disabled="deleting" @click="deleteOpen = false">
               Batal
             </button>
-            <button type="button" class="btn-danger" :disabled="deleting" @click="confirmDestroy">
+            <button type="button" class="btn-accent" :disabled="deleting" @click="confirmDestroy">
               {{ deleting ? 'Menghapus...' : 'Ya, hapus' }}
             </button>
           </div>

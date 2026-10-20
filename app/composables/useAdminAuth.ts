@@ -44,20 +44,6 @@ export function useAdminAuth() {
     user.value = JSON.stringify(nextUser)
   }
 
-  /**
-   * Login lokal tanpa backend (fallback saat server tidak terjangkau).
-   * Endpoint normal: useAdminApi().login().
-   */
-  function loginLocal(identifier: string) {
-    const name = identifier || 'Administrator'
-    saveToken('local-session', {
-      id: 0,
-      email: identifier,
-      name,
-      role: 'superuser'
-    })
-  }
-
   function clear() {
     token.value = null
     user.value = null
@@ -73,7 +59,6 @@ export function useAdminAuth() {
     profile,
     isAuthenticated,
     saveToken,
-    loginLocal,
     clear,
     logout
   }
