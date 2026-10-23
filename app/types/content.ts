@@ -28,7 +28,6 @@ export interface SiteSettings {
   legalName: string
   tagline: Localized
   description: Localized
-  agencyNumber: string
   foundedYear: string
   address: Localized
   phone: string[]

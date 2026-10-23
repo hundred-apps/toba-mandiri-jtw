@@ -54,7 +54,7 @@ const socials = computed(() => {
           {{ pick(settings.tagline) }}
         </p>
         <p v-if="settings" class="mt-3 text-xs text-brand-200">
-          {{ settings.legalName }} &middot; {{ $t('footer.official') }} {{ settings.agencyNumber }}
+          {{ settings.legalName }} &middot; {{ $t('footer.official') }}
         </p>
       </div>
 

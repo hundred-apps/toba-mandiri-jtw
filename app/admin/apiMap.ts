@@ -72,7 +72,6 @@ const MAPS: Record<string, Record<string, FieldMap>> = {
     legalName: { api: 'legalName', kind: 'plain' },
     tagline: { api: 'tagline', kind: 'bilingual' },
     description: { api: 'description', kind: 'bilingual' },
-    agencyNumber: { api: 'agencyNumber', kind: 'plain' },
     foundedYear: { api: 'foundedYear', kind: 'plain' },
     address: { api: 'address', kind: 'bilingual' },
     phone: { api: 'phone', kind: 'plain' },
